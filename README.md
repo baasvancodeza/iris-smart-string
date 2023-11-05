@@ -37,6 +37,8 @@ git clone https://github.com/baasvancodeza/iris-smart-string.git
   ```
 - Run the following  
   ```
+  s ^SysConfig("IDNumberRegex") = "^\d{13}$"
+  s ^SysConfig("LastNameCleanup") = "$lb($lb(""<=>W"","""",""""),$lb(""*C"","""",""""),$lb(""*P"","""",""- '""))"
   Do ##class(baasvancodeza.Demo.RunDemo).Run()
   ```
 - To go tot he Mangement Portal to run SQL queries on the table go to the below. Remember to replace the "hostname-or-ip with your computer's IP or hostname  
@@ -51,7 +53,11 @@ git clone https://github.com/baasvancodeza/iris-smart-string.git
 - Open a terminal
   - Change to the namespace where you have imported the package and imported the Demo srouce
   - Run the following  
-    ``Do ##class(baasvancodeza.Demo.RunDemo).Run()``
+    ```
+    s ^SysConfig("IDNumberRegex") = "^\d{13}$"
+    s ^SysConfig("LastNameCleanup") = "$lb($lb(""<=>W"","""",""""),$lb(""*C"","""",""""),$lb(""*P"","""",""- '""))"
+    Do ##class(baasvancodeza.Demo.RunDemo).Run()
+    ```
 
 ### Demo Description
 
