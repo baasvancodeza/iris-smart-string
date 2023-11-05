@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Export generator="Cache" version="25">
-    <Document name="baasvancodeza-iris-string-rgx.ZPM">
+    <Document name="baasvancodeza-iris-smart-string.ZPM">
         <Module>
-            <Name>baasvancodeza-iris-string-rgx</Name>
+            <Name>baasvancodeza-iris-smart-string</Name>
             <Version>2.0.0</Version>
-            <Description>String Datatype that supports regular expression</Description>
+            <Description>String Datatype that supports rgular expression validation, data cleanup, and additional validations.</Description>
             <Packaging>module</Packaging>
             <SourcesRoot>src</SourcesRoot>
-            <Resource Name="baasvancodeza.StringRgx.PKG" />
+            <Resource Name="baasvancodeza.DataTypes.PKG" />
         </Module>
     </Document>
 </Export>
